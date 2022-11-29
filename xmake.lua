@@ -11,5 +11,7 @@ target("PapyrusVM")
   if is_plat("windows") then
     add_defines("WIN32")
   end
-  add_headerfiles("src/**.h" "libs/**.h")
-  add_files("src/**.cpp" "libs/**.cpp")
+  add_headerfiles("src/**.h")
+  add_headerfiles("libs/**.h")
+  add_files("src/**.cpp")
+  add_files("libs/**.cpp")
